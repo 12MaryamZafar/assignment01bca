@@ -69,7 +69,6 @@ func CalculateHash(stringToHash string) string {
 	hashBytes := sha256.Sum256([]byte(stringToHash))
 	return fmt.Sprintf("%x", hashBytes)
 }
-
 func main() {
 	// Create the genesis block
 	genesisBlock := NewBlock("genesis", 0, "")
